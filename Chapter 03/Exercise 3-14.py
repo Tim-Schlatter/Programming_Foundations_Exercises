@@ -25,3 +25,38 @@
 #
 # Enter the number of seconds: 30
 # The number of seconds is less than one minute.
+
+seconds = 0
+days = 0
+hours = 0
+minutes = 0
+dayremains = 0
+hoursremains = 0
+minutesremains = 0
+
+
+seconds = int(input("Enter the number of seconds: "))
+
+if seconds >= 86400: 
+    days = seconds // 86400
+    dayremains = seconds % 86400
+if seconds >= 3600:
+    hours = seconds // 3600
+    hoursremains = seconds % 3600
+if seconds >= 60:
+    minutes = seconds // 60
+    minutesremains = seconds % 60
+if minutes == 0: 
+    print ("The number of seconds is less than one minute.")
+else: 
+    print (f"{seconds} seconds are equal to: ")
+    print (f"{minutes} full minute(s) and {minutesremains} seconds.")
+    if hours != 0:
+        print (f"{hours} full hour(s) and {hoursremains} seconds.")
+    if days != 0:
+        print (f"{days} full day(s) and {dayremains} seconds.")
+
+
+
+
+

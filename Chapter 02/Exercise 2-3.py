@@ -12,3 +12,8 @@
 # Example:
 # Enter a value in pounds: 10
 # 10 pounds is 4.54 kilograms.
+
+pound = float(input("Enter a value in pounds!"))
+kg = (pound*0.454)
+
+print(f"{pound} pounds is {kg:.2f} kilograms.")

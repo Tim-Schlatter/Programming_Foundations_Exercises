@@ -29,3 +29,41 @@
 # Minimum packages of hot dog buns needed: 7
 # Hot dogs left over: 0
 # Hot dog buns left over: 6
+
+peopleNumber = int(input("Enter the number of people attending the cookout: "))
+hotdogsPerPerson = int(input("Enter the number of hot dogs per person: "))
+
+HOT_DOGS_PER_PACKAGE = 10
+BUNS_PER_PACKAGE = 8
+
+total_hotdogs = (peopleNumber*hotdogsPerPerson)
+
+minimum_hotdogs = (total_hotdogs // HOT_DOGS_PER_PACKAGE)
+
+if minimum_hotdogs > 0:
+    dogsleft = total_hotdogs % HOT_DOGS_PER_PACKAGE
+    if dogsleft != 0: 
+        minimum_hotdogs += 1
+
+else:
+    minimum_hotdogs = 1
+
+dogsleft = HOT_DOGS_PER_PACKAGE * minimum_hotdogs - total_hotdogs
+
+minimum_buns = (total_hotdogs // BUNS_PER_PACKAGE)
+
+if minimum_buns > 0:
+    bunsleft = total_hotdogs % BUNS_PER_PACKAGE
+    if bunsleft != 0: 
+        minimum_buns += 1
+
+else:
+    minimum_buns = 1
+
+bunsleft = BUNS_PER_PACKAGE * minimum_buns - total_hotdogs
+
+
+print (f"Minimum packages of hot dogs needed: {minimum_hotdogs}")
+print (f"Minimum packages of buns needed: {minimum_buns}")
+print (f"Hot dogs left over: {dogsleft}")
+print (f"Hot dog buns left over: {bunsleft}")

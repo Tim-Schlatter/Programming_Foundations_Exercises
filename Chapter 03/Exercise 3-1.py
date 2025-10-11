@@ -24,3 +24,17 @@
 # Enter an integer: 0
 # Zero
 # Even
+
+number = int(input("Enter an integer number: "))
+
+if number > 0:
+    print ("Positive")
+elif number < 0:
+    print ("Negative")   
+else: 
+    print ("Zero")
+
+if number % 2 == 0:
+    print ("Even")
+else:
+    print ("Uneven")

@@ -20,3 +20,12 @@
 # Final purchase amount: 1050.00
 # Number of instalments: 12
 # Cost per instalment: 87.50
+
+purchase_amount = float(input("What is your purchase amount?"))
+number_instalments = float(input("What is your desired number of installments?"))
+
+Final = purchase_amount*1.05
+
+print(f"Final purchase amount: {Final}")
+print(f"Number of instalments: {number_instalments}")
+print(f"Cost per instalment: {Final/number_instalments}")

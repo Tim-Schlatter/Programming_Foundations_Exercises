@@ -24,3 +24,17 @@
 # Enter the object's mass in kilograms: 5
 # Object Weight: 49.00
 # The object is too light. It weighs less than 100.0 Newtons.
+
+MASS_MULTIPLIER = 9.8 
+TOO_HEAVY = 500.00
+TOO_LIGHT = 100.00
+
+mass = float(input("Enter the object's mass in kilograms: "))
+weight = (mass*MASS_MULTIPLIER)
+
+print (f"Object Weight: {weight:.2f}")
+
+if weight >= TOO_HEAVY:
+    print(f"The object is too heavy. It weighs more than {TOO_HEAVY} Newtons")
+elif weight <= TOO_LIGHT:
+    print(f"The object is too light. It weighs less than {TOO_LIGHT} Newtons")

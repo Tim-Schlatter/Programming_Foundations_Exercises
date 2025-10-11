@@ -30,3 +30,21 @@
 # Enter the year in two digit format: 60
 # The date is 12/5/60
 # This is not a magic date.
+
+month = int(input("Enter a month in numeric form from 1-12: "))
+day = int(input("Enter a day in numeric form from 1-31: "))
+year = int(input("Enter a year in two-digit format 00-99 : "))
+
+if  month > 12 or  month < 1:
+    print ("Error: Invalid month input")
+elif day > 31 or day < 1: 
+    print ("Error: Invalid day input")
+elif year > 99 or year < 0:
+    print("Error: Invalid year input")
+
+else: 
+    print (f"The date is {month}/{day}/{year}")
+    if (month*day) == year:
+        print ("This is a magic date.")
+    else:
+        print ("This is not a magic date.")

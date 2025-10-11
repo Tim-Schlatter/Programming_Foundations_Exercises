@@ -24,3 +24,16 @@
 #
 # Enter a number (1-12) for the month: 15
 # Error: Please enter a number between 1 and 12.
+
+number = int(input("Enter a number between 1-12: "))
+
+if number >= 1 and number <= 3:
+    print (f"Your month is in the first quarter!")
+elif number >= 4 and number <= 6:
+    print ("Your month is in the second quarter!")
+elif number >= 7 and number <= 9:
+    print ("Your month is in the third quarter!")
+elif number >= 10 and number <= 12:
+    print ("Your month is in the fourth quarter!")
+else:
+    print ("Error: Please enter a number between 1 and 12.")

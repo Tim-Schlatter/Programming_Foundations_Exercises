@@ -24,3 +24,21 @@
 # Enter the number of books purchased: 10
 # You have purchased 10 books.
 # This earns you 60 points.
+
+numBooks = 0 
+points = 0 
+
+numBooks = int(input("Enter the number of books you purchased: ")) 
+
+if numBooks == 2:
+    points += 5
+elif numBooks == 4:
+    points += 15 
+elif numBooks == 6:
+    points += 30
+elif numBooks >= 8:
+    points += 60
+
+print (f"You have purchased {numBooks} books.")
+print (f"This earns you {points} points.")
+

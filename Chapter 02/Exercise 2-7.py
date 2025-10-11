@@ -14,3 +14,10 @@
 # Enter the miles driven: 350
 # Enter the gallons of fuel used: 15
 # You used 23.33 miles per gallon.
+
+miles_driven = float(input("How many miles did you drive?"))
+fuel = float(input("How many gallons of fuel did you use?"))
+
+mpg = miles_driven/fuel
+
+print(f"You used {mpg:.2f} gallons per mile")

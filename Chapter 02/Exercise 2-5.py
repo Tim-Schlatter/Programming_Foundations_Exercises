@@ -18,3 +18,10 @@
 # 420.0 miles in 6 hours.
 # 700.0 miles in 10 hours.
 # 1050.0 miles in 15 hours.
+
+Time = float(input("How long where you driving?"))
+speed = 70
+
+distance = (Time*speed)
+
+print(f"{distance} miles in {Time} hours.")

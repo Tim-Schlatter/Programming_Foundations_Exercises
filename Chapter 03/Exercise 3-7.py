@@ -26,3 +26,26 @@
 # Enter points out of 50 for the Exam: 45
 # Total points: 87
 # Distinction
+
+Test_1 = float(input("Enter the points of Test 1: "))
+Test_2 = float(input("Enter the points of Test 2: "))
+Exam = float(input("Enter the points for the Exam: "))
+
+if Test_1 > 25 or Test_1 < 0:
+    print ("Error: Invalid input for Test 1")
+elif Test_2 > 25 or Test_2 < 0:
+    print ("Error: Invalid input for Test 2")
+elif Exam > 50 or Exam < 0:
+    print ("Error: Invalid input for Exam")
+else:
+    Totalpoints = (Test_1+Test_2+Exam)
+    print (f"Total point: {Totalpoints}")
+    
+    if Totalpoints < 50 or Exam < 25:
+        print ("Fail")
+    elif Totalpoints >= 50 and Totalpoints <= 59:
+        print ("Pass")
+    elif Totalpoints >= 60 and Totalpoints <= 79:
+        print ("Credit")
+    elif Totalpoints >= 80 and Totalpoints <= 100:
+        print ("Distinction")

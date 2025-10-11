@@ -23,3 +23,21 @@
 # Area A: 50.00
 # Area B: 48.00
 # Area A is greater than Area B.
+
+length_A = float(input("Enter the length A: "))
+width_A = float(input("Enter the width of A: "))
+length_B = float(input("Enter the length B: "))
+width_B = float(input("Enter the width B:"))
+
+area_A = length_A*width_A
+area_B = length_B*width_B
+
+print(f"Area A: {area_A:.2f}")
+print(f"Area B: {area_B:.2f}")
+
+if area_A > area_B:
+    print("Area A is greater than Area B.")
+elif area_B > area_A:
+    print("Area B is greater than Area A")
+else:
+    print("Area A ist equal to Area B")

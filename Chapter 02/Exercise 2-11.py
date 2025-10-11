@@ -20,3 +20,14 @@
 # Enter the number of tigers: 25
 # Lions: 37.50%
 # Tigers: 62.50%
+
+lions = int(input("Enter the number of lions: "))
+tigers = int(input("Enter the number of tigers: "))
+
+total = lions + tigers 
+
+percent_lions = lions / total
+percent_tigers = tigers / total
+
+print (f"Lions: {percent_lions*100}%")
+print (f"Tigers: {percent_tigers*100}%")

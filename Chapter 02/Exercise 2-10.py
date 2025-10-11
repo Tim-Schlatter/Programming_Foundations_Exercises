@@ -26,3 +26,19 @@
 # 0.75 cups of sugar
 # 0.50 cups of butter
 # 1.38 cups of flour
+
+n_cookies = int(input("Number of Cookies you want to make: "))
+
+COOKIES_RECIPE = 48
+SUGAR_RECIPE = 1.5
+BUTTER_RECIPE = 1
+FLOUR_RECIPE = 2.75
+
+sugar = (n_cookies*SUGAR_RECIPE/COOKIES_RECIPE)
+butter = (n_cookies*BUTTER_RECIPE/COOKIES_RECIPE)
+flour = (n_cookies*FLOUR_RECIPE/COOKIES_RECIPE)
+
+print (f"To make {n_cookies} cookies, you will need: ")
+print (f"{sugar:.2f} cups of sugar")
+print (f"{butter:.2f} cups of butter")
+print (f"{flour:.2f} cups of flour")

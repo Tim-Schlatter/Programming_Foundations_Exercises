@@ -23,3 +23,19 @@
 # Tip: $9.00
 # Tax: $3.50
 # Total: $62.50
+
+TAX_RATE = 0.07
+TIP_RATE = 0.18
+
+food = float(input("How much did your food cost?"))
+
+tip = food*TIP_RATE
+tax = food*TAX_RATE
+
+total = food+tip+tax
+
+print(f"Your food costed ${food}")
+print(f"Tip: ${tip}")
+print(f"Tax: ${tax}")
+print(f"Total: ${total}")
+

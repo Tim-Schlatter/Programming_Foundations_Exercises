@@ -18,3 +18,13 @@
 # Note: Remember to convert the interest rate from percentage to decimal
 #
 # Example output: "At the end of 5 years you will have $1,276.28"
+P = float(input("What is your starting principal?"))
+R = float(input("What is your interest rate?"))
+N = int(input("How many times per year is the interest compounded?"))
+T = int(input("How many years will the account earn interest?"))
+
+R = R / 100
+
+A = P * (1 + R/N)**(N*T)
+
+print(f"At the end of {T} years you will have {A:,.2f} CHF")

@@ -21,3 +21,19 @@
 #
 # Enter the weight of the package: 1.5
 # Shipping charge: $1.50
+
+package_weight = 0
+ #shipping_charge = float (0) 
+
+package_weight = float(input("Enter the weight of the package: "))
+
+if package_weight > 10:
+    shipping_charge = 4.75
+elif package_weight > 6:
+    shipping_charge = 4.00
+elif package_weight > 2:
+    shipping_charge = 3.00
+else:
+    shipping_charge = 1.50
+
+print (f"Shipping charge: {shipping_charge}")

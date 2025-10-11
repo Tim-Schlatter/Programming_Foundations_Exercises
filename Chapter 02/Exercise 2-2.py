@@ -12,3 +12,12 @@
 # Example:
 # Enter the projected sales: 1000
 # The projected profit is 230.00
+
+sales_amount = int(input("What is the projected sales amount?"))
+
+profit_margin = 23/100
+
+profit = (sales_amount*profit_margin)
+
+print(f"The projected profit is {profit:.2f} CHF")
+

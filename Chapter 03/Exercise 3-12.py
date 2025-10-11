@@ -22,3 +22,24 @@
 # Enter the number of packages purchased: 25
 # Discount Amount: $495.00
 # Total Amount: $1,980.00
+
+RETAIL_PRICE = 99
+numPackages = 0
+
+numPackages = int(input("Enter the number of packages purchased: "))
+price = (numPackages*RETAIL_PRICE)
+
+if numPackages >= 10 and numPackages <= 19:
+    endprice = price*0.9
+elif numPackages >= 20 and numPackages <= 49:
+    endprice = price*0.8
+elif numPackages >= 50 and numPackages <= 99:
+    endprice = price*0.7
+elif numPackages >= 100: 
+    endprice = price*0.6
+
+discount = price-endprice
+
+print (f"Discount Amount: CHF {discount:,.2f}")
+print (f"Total Amount: CHF {endprice:,.2f}")
+ 
