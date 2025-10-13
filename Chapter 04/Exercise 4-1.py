@@ -21,3 +21,12 @@
 # Enter the number of bugs collected today: 2
 # Enter the number of bugs collected today: 8
 # Total bugs collected: 25
+
+bugs = 0 
+total = 0
+
+for day in range (5):
+    bugs = int(input("Enter the number of bugs collected: "))
+    total += bugs
+
+print(f"Total bugs collected: {total}")

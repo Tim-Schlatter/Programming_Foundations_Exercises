@@ -26,3 +26,13 @@
 # 20		84.0
 # 25		105.0
 # 30		126.0
+
+CALORIESPERMINUTE = 4.2 
+calories_burned = 0 
+minutes = 0 
+
+print ('Minutes\t\tCalories Burned')
+print ('-------------------------------')
+
+for minutes in range (10, 31, 5):
+    calories_burned
