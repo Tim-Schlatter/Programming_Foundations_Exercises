@@ -35,4 +35,5 @@ print ('Minutes\t\tCalories Burned')
 print ('-------------------------------')
 
 for minutes in range (10, 31, 5):
-    calories_burned
+    calories_burned = CALORIESPERMINUTE*minutes
+    print (minutes, "\t\t",calories_burned) 
