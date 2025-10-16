@@ -26,3 +26,18 @@
 # Enter the distance in kilometers: 10
 # The conversion of 10.00 kilometers
 # to miles is 6.21 miles.
+
+KILOMETERS_TO_MILES = 0.6214
+
+def main():
+    mykilometers  = float(input("Enter the distance in kilometers: "))
+
+    showmiles(mykilometers)
+
+def showmiles(kilometers):
+    miles = 0
+    miles = kilometers*KILOMETERS_TO_MILES
+    print(f"the conversion of {kilometers} kilometers to miles is {miles:.2f}")
+    
+
+main()

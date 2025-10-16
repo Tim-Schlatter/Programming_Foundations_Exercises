@@ -27,3 +27,28 @@
 # 2			 1050
 # 3			 1102
 # ... (continues for all days)
+
+
+
+
+starting_number = 0
+
+starting_number = float(input("ENter the starting number of organism (must be > 0): "))
+daily_increase = float(input("Average daily increase: "))
+number_of_days = int(input("Enter the number of days to multiply: "))
+
+total = starting_number
+avg = 0 
+
+if starting_number > 0 and daily_increase > 0 and number_of_days > 0:
+    print("\nDay Approximate\tPopulation")
+    print("-"*40)
+    for day in range(number_of_days):
+        avg += total/100*daily_increase
+        total += avg
+        print(f"{day+1}\t{starting_number+avg:,.0f}")        
+else:
+    print("Invalid Input: numbers must be > 0!")
+
+
+

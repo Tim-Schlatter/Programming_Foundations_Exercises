@@ -24,3 +24,13 @@
 # ***
 # **
 # *
+
+size = 7
+character = "*"
+
+for row in range(size):
+    for colum in range(size, row, -1):
+        print(character, end='')
+
+
+    print() 
