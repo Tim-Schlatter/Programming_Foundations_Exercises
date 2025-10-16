@@ -30,3 +30,23 @@
 # Or if no debt:
 # You do not have a sleep debt...
 # I wish I could say the same!
+
+DESIRABLE_SLEEP_HOURS = 8 
+NUMBER_OF_DAYS = 7
+total_slept_debt = 0
+
+for days in range(1, NUMBER_OF_DAYS +1):
+    print(f"Day {days} of {NUMBER_OF_DAYS}")
+    actual_sleep = float(input("Enter the number of sleep obtained:"))
+    total_slept_debt += actual_sleep
+
+if DESIRABLE_SLEEP_HOURS*NUMBER_OF_DAYS > total_slept_debt:
+    print(f"TOtal Sleep debt: {DESIRABLE_SLEEP_HOURS*NUMBER_OF_DAYS-total_slept_debt } hour(s)")
+else:
+    print("\nYou do not have a sleep debt...\n")
+
+
+
+
+
+
