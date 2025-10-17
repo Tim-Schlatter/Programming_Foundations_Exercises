@@ -26,3 +26,21 @@
 #
 # Please enter an integer: 1
 # 1 is NOT a prime number.
+def function():
+
+    number = int(input("Enter an integer: "))
+
+    if number > 0:
+        for i in range(2, int(number/2)+1):
+            if (number % i) == 0:
+                print(number, "is NOT a prime number.")
+                break
+
+        else:   
+            print(number, "is a prime number.")
+
+    else:
+        print(f"{number} is NOT a prime number!")
+
+function()
+

@@ -1,7 +1,7 @@
 # main function
 def main():
     # Call the function and print the result for testing.
-    print(repeat('Hi', 3))
+    print(repeat('Hi', 4))
 
 
 # The repeat function accepts text and multiplier

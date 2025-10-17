@@ -26,3 +26,20 @@
 # #    #
 # #     #
 # #      #
+
+size = 6
+char = "#"
+space = " "
+
+
+
+for row in range(size):
+    for column in range(row +2):
+        if column == 0 or column == row +1:
+            print(char, end="")
+        else:
+            print(space, end="")
+        
+    print()
+
+
